@@ -63,10 +63,10 @@ org $8120E20; dd $3002490   // track player #1, 0x320 bytes -- the "default" mus
 org $8120E2C; dd $30027B0   // track player #2, 0x320 bytes -- used for songs that interrupt the overworld music (examples include battles, menus, and saving)
 
 // Step #10: last thing we need to do! Time to put the rest of Mother 3's music player arrays into place...
-org $8120E38; dd $3000930	// track player #3, 0x0A0 bytes -- used for battle SFX (*not* including combo instruments)
+org $8120E38; dd $3000930	// track player #3, 0x0A0 bytes -- used for combo instruments
 org $8120E50; dd $3000570	// track player #5, 0x280 bytes -- used for explosions
 org $8120E5C; dd $30007F0	// track player #6, 0x140 bytes -- used for menu cursors and text printing
-org $8120E74; dd $30009D0	// track player #8, 0x280 bytes -- used for combo instruments
+org $8120E74; dd $30009D0	// track player #8, 0x280 bytes -- used for battle SFX (*not* including combo instruments)
 org $8120E80; dd $30004D0	// track player #9, 0x0A0 bytes -- used for monster noises
 
 // Optional step: you can change the sample rate of the game's audio by uncommenting the next org and substituting 'x' with any number below:
